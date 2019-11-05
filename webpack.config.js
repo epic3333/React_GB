@@ -19,6 +19,14 @@ module.exports = {
                 exclude: /node_modules/,
                 query: {
                     presets: ['@babel/env', '@babel/react'],
+                    plugins: [
+                        [
+                            "@babel/plugin-proposal-class-properties",
+                            {
+                                "loose": true
+                            }
+                        ]
+                    ]
                 }
             },
         ],

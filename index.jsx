@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './MessageField.jsx';
 
 /* const element = React.createElement(
     'h1',
@@ -7,7 +8,7 @@ import ReactDOM from 'react-dom';
     "Кажется, работает React",
 ); */
 
-const messages = ['Hi', 'how are you'];
+/* const messages = ['Hi!@@', 'how are you'];
 
 const Message = (props) => <div className="message">{ props.text }</div>
 
@@ -22,9 +23,9 @@ const MessageField = (props) => <div>
     <h1>Чат</h1>
     { props.messages.map(message => <Message text={ message } />) }
     <button onClick={ sendMessage }>Send</button>
-</div>;
+</div>; */
 
 ReactDOM.render(
-    <MessageField messages={ messages } />,
+    <App />,
     document.getElementById('root'),
 );
